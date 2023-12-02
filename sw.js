@@ -4,7 +4,7 @@ const cacheNameDynamic = "dynamic-v14";
 const appAssets = [
   "/",
   "/index.html",
-  "/pages/fallback.html",
+  "/pages/fb.html",
   "/css/materialize.min.css",
   "/css/app.css",
   "https://fonts.googleapis.com/icon?family=Material+Icons",
@@ -57,7 +57,7 @@ self.addEventListener("fetch", (evt) => {
           })
         );
       }).catch(() => {
-        return caches.match("/pages/fallback.html");
+        return caches.match("/pages/fb.html");
       })
     );
   }
