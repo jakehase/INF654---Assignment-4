@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.nav-wrapper {
+    padding-left: 20px;
+}
+
+.brand-logo {
+    font-size: 1.8rem;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.responsive-img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.page-footer {
+    padding-top: 20px;
+}
+
+.page-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
