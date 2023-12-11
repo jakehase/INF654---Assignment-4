@@ -1,4 +1,3 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
 import {
   getFirestore,
   collection,
@@ -7,24 +6,29 @@ import {
   addDoc,
   deleteDoc,
   doc,
-} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  apiKey: "AIzaSyBezM9GxX-vF8p6rHfcTPGEKDJs_YYlT_E",
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDfT_IXUWWsn3LuYuLAB1YoN00ORmWBTmE",
+    authDomain: "portfolio-7c105.firebaseapp.com",
+    projectId: "portfolio-7c105",
+    storageBucket: "portfolio-7c105.appspot.com",
+    messagingSenderId: "751382361893",
+    appId: "1:751382361893:web:48b3a29fc4cfda1a628ccc",
+    measurementId: "G-Y2TKL7CNLS"
+  };
 
-  authDomain: "task-manager-2-c4224.firebaseapp.com",
-
-  projectId: "task-manager-2-c4224",
-
-  storageBucket: "task-manager-2-c4224.appspot.com",
-
-  messagingSenderId: "1049680283065",
-
-  appId: "1:1049680283065:web:d116b5677adf230481a268"
-
-};
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
